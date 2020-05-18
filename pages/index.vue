@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Wilkommen auf unserer Website!</p>
+        <p>Wilkommen auf unserer Website! - Bild folgt.</p>
         <img src="static/Banner.jpg"/>
       </div>
     </div>

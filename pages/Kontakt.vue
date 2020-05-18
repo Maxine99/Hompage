@@ -39,8 +39,7 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Wilkommen auf unserer Website!</p>
-        <img src="Banner.jpg" width="1280" height="550" alt="Bild"/>
+        <p>Kontakt - Inhalt folgt.</p>
       </div>
     </div>
 </template>
