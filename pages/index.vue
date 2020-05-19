@@ -39,14 +39,15 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Wilkommen auf unserer Website! - Bild folgt.</p>
-        <img src="static/Banner.jpg"/>
+        <img src="picture.jpg"/>
       </div>
     </div>
 </template>
 
 <script>
-
+    export default {
+      name: "index"
+      }
 </script>
 
 <style>
@@ -74,10 +75,9 @@
   width: 100%;
   height: 850px;
 
+  left: 0px;
   top: 250px;
   position: absolute;
-
-  color: white;
 }
 
 .title {
@@ -88,12 +88,6 @@
   font-size: 100px;
   color: #5DADE2;
   letter-spacing: 1px;
-}
-
-img{
-  align: center;
-  width: 100%;
-  height: 100%;
 }
 
 h2

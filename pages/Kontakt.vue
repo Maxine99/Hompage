@@ -39,13 +39,27 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Kontakt - Inhalt folgt.</p>
+        <div class="Daten">
+          <h1>Kontakt</h1>
+          <p>Da Vinci Restaurant</p>
+          <p>Leonardo Da Vinci</p>
+          <p>Kanalstraße 345</p>
+          <p>56394 Universalstadt</p>
+          <p>Tel.: 016263965281</p>
+          <p>E-Mail: da.vinci@gmx.de</p>
+        </div>
+        <div class="Bild">
+          <img src="Leonardo.jpg">
+          <p>Geschäftsführer: Leonardo Da Vinci</p>
+        </div>
       </div>
     </div>
 </template>
 
 <script>
-
+    export default {
+      name: "Kontakt"
+    }
 </script>
 
 <style>
@@ -76,6 +90,30 @@
   top: 250px;
   position: absolute;
 
+  color: white;
+}
+
+.Daten{
+  border: solid #5DADE2;
+  height: 270px;
+  width: 280px;
+
+  background-color: #5F6A6A;
+  padding: 50px;
+  color: white;
+}
+
+.Bild{
+  background-color: #5F6A6A;
+  border: solid #5DADE2;
+  height: 400px;
+  width: 400px;
+
+  top: 300px;
+  right: 50px;
+  float: right;
+
+  padding: 50px;
   color: white;
 }
 

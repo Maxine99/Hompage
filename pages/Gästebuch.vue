@@ -39,13 +39,33 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Gästebuch - Inhalt folgt.</p>
+        <h1>Gästebuch</h1>
+        <br>        
+        <p>Hallo liebe Gäste,</p>
+        <p>hier können Sie uns einen netten Kommentar dalassen. Ganz gleich, ob Lob oder Kritik, wir lesen uns alles durch.</p>
+      </div>
+      <div class="Komfeld">
+        <p style="white-space: pre-line;">{{Kommentar}}</p>
+        <br>        
+        <textarea v-model="Kommentar" placeholder="Schreibe einen Kommentar"></textarea><button @click="senden">Senden</button>
+        {{Kommentar}}
       </div>
     </div>
 </template>
 
 <script>
-
+    export default {
+      name: "Gästebuch",
+        data(){
+          return {
+           Kommentar: ""
+          }
+        },
+          senden(){
+            this.Kommentar       
+          }
+      
+    }
 </script>
 
 <style>
@@ -71,12 +91,27 @@
 .inhalt{
   background.color: #5F6A6A;
   width: 100%;
-  height: 850px;
+  height: 500px;
 
   top: 250px;
   position: absolute;
 
   color: white;
+  padding: 30px;
+}
+
+.Komfeld{
+  background.color: #5F6A6A;
+  border-style: groove;
+  width: 800px;
+  height: 300px;
+
+  left: 30px;
+  top: 400px;
+  position: absolute;
+  color: white;
+  text-align: left;
+  padding: 10px;
 }
 
 .title {
@@ -102,6 +137,10 @@ h2
 
 .links {
   padding-top: 15px;
+}
+
+p{
+  text-align: left;
 }
 
 </style>
