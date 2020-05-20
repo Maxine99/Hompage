@@ -23,7 +23,7 @@
             Historie unseres Restaurants
           </nuxt-link>
           <nuxt-link 
-            to="Gästebuch"
+            to="Gaestebuch"
             target="_blank"
             class="button1"
           >
@@ -39,14 +39,29 @@
         </div>
       </div>
       <div class="inhalt">
-        <p>Speisekarte - Inhalt folgt.</p>
+        <h1>Speisekarte</h1>
+        <br>
+        <input type="checkbox" id="pizza" value="Pizza" v-model="dishes">
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" id="lasagne" value="Lasagne" v-model="dishes">
+        <label for="lasagne">Lasagne</label>
+        <input type="checkbox" id="spaggetthi" value="SPaggetthi" v-model="dishes">
+        <label for="spaggetthi">Spaggetthi</label>
+        <input type="checkbox" id="tiramisu" value="Tiramisu" v-model="dishes">
+        <label for="tiramisu">Tiramisu</label>
+        <br>
+        <span>ausgewählte Speisen: {{dishes}}</span>
+        
       </div>
     </div>
 </template>
 
 <script>
     export default {
-      name: "Speisekarte"
+      name: "Speisekarte",
+      data: {
+        dishes: []
+      }
     }
 </script>
 

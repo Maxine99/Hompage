@@ -44,28 +44,47 @@
         <p>Hallo liebe Gäste,</p>
         <p>hier können Sie uns einen netten Kommentar dalassen. Ganz gleich, ob Lob oder Kritik, wir lesen uns alles durch.</p>
       </div>
-      <div class="Komfeld">
-        <p style="white-space: pre-line;">{{Kommentar}}</p>
+     <!-- <div id="Komfeld">
+        <p>Kommentar von:</p>
+        {{vorname, email, Kommentar}}
+        
+         Name: {{vorname}} <br>
+         E-Mail: {{email}} <br>
+         Kommentar: {{Kommentar}}
+        <p v-for="vorname in kommentare"></p>
+        <p v-for="email in kommentare"></p>
+        <p v-for="Kommentar in kommentare"></p>
+        
+              <br>
+        <input v-model="vorname" placeholder="Name">
+        <br>
+        <input v-model="email" placeholder="E-Mail">
         <br>        
-        <textarea v-model="Kommentar" placeholder="Schreibe einen Kommentar"></textarea><button @click="senden">Senden</button>
-        {{Kommentar}}
-      </div>
+        <input v-model="Kommentar" placeholder="Schreibe einen Kommentar">
+        <button @click="senden">Senden</button>
+      </div>-->
     </div>
 </template>
 
 <script>
     export default {
-      name: "Gästebuch",
+      name: "Gaestebuch",
         data(){
-          return {
-           Kommentar: ""
-          }
+          
+          /*
         },
-          senden(){
-            this.Kommentar       
+        methods:({
+          addText: function(){
+            this.kommentare.push{
+              vorname:"",
+              email:"",
+              Kommentar:""
+            });
+            */
           }
-      
+        
     }
+    
 </script>
 
 <style>
@@ -100,7 +119,7 @@
   padding: 30px;
 }
 
-.Komfeld{
+#Komfeld{
   background.color: #5F6A6A;
   border-style: groove;
   width: 800px;

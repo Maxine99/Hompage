@@ -23,7 +23,7 @@
            Speisekarte
           </nuxt-link>
           <nuxt-link 
-            to="Gästebuch"
+            to="Gaestebuch"
             target="_blank"
             class="button1"
           >
